@@ -1,0 +1,589 @@
+/* ///// =====>>>>> google font */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+}
+.container {
+  width: 1300px;
+  margin: 0 auto;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+
+/* /////// ===== >>>>>> header CSS */
+.header {
+  padding-top: 10px;
+  background-color: #fff;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  border-bottom: 1px solid #e4e7e6;
+}
+.header__logo {
+}
+.header__logo__img {
+  width: 90px;
+}
+.header__menu {
+}
+.menu__list {
+  list-style: none;
+}
+.menu__item {
+  display: inline-block;
+  margin-left: -5px;
+}
+.menu__link {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  padding: 15px 20px;
+  font-size: 20px;
+}
+
+/* ////// ===== >>>>> banner CSS */
+.banner {
+  background-image: url(img/kobu-agency-IWLR561-Yb-MY-unsplash.jpg);
+  padding: 350px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff;
+  position: relative;
+}
+.banner::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.banner__content {
+  position: relative;
+  z-index: 99;
+}
+.banner__sub {
+  font-size: 45px;
+  font-weight: 400;
+}
+.banner__main {
+  font-size: 90px;
+  margin: 30px 0;
+  font-weight: 600;
+}
+.banner__button__box {
+}
+.banner__button__box > button {
+  border: none;
+  outline: none;
+  display: inline-block;
+  padding: 20px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: inherit;
+  color: #7d7d7d;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.banner__button__box > button:hover {
+  background-color: #aa972c;
+  color: #fff;
+}
+.banner__button__box > button:not(:last-child) {
+  margin-right: 20px;
+}
+.banner__button__box > button > span {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+/* ////// ===== >>>>> pricing CSS */
+.pricing {
+  background-color: #f7f7f7;
+  padding: 100px;
+}
+.pricing__heading__box {
+}
+.pricing__sub {
+  font-weight: normal;
+  font-size: 16px;
+}
+.pricing__main {
+  font-size: 50px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+.pricing__card__box {
+  margin-top: 100px;
+}
+.pricing__card__item {
+  background-color: #fff;
+  padding: 0px 0;
+  width: 31%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.pricing__card__item:hover > .pricing__card__price {
+  background-color: #ef952a;
+  color: #fff;
+}
+.pricing__card__item:hover > .pricing__card__price > h1 {
+  background-color: #ef952a;
+}
+.pricing__card__item:not(:last-child) {
+  margin-right: 3.5%;
+}
+.pricing__card__item:hover .pricing__btn {
+  background-color: #ef952a;
+  color: #fff;
+}
+.pricing__card__price {
+  border-bottom: 1px solid #d1d1d1;
+  padding: 20px 40px;
+  padding-top: 50px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.pricing__card__price > h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.pricing__card__price > h1 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  background-color: #f5f5f5;
+  padding: 5px 8px;
+  transition: background 0.5s;
+  -webkit-transition: background 0.5s;
+  -moz-transition: background 0.5s;
+  -ms-transition: background 0.5s;
+  -o-transition: background 0.5s;
+}
+.pricing__card__price > h1 > span {
+  /* transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s; */
+}
+.pricing__card__price > h1 > span:nth-child(1) {
+  font-size: 50px;
+}
+.pricing__card__price > h1 > span:nth-child(2) {
+  font-size: 50px;
+  margin-right: 10px;
+}
+.pricing__card__price > h1 > span:nth-child(3) {
+}
+.pricing__card__price > h4 {
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+.pricing__card__price > p {
+  padding: 0 10px 0px 0;
+  font-size: 22px;
+}
+.pricing__list__box {
+  padding: 20px 40px;
+}
+.pricing__list {
+  list-style: none;
+}
+.check::before {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 33%;
+  left: 0px;
+  color: #e7912c;
+  font-size: 30px;
+}
+.cross::before {
+  content: "\f00d";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 33%;
+  left: 0px;
+  color: #e7912c;
+  font-size: 30px;
+}
+.pricing__item {
+  padding: 15px 0;
+  position: relative;
+  padding-left: 45px;
+  font-size: 25px;
+}
+.pricing__btn__box {
+  text-align: center;
+}
+.pricing__btn {
+  display: inline-block;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px #bdc6ff;
+  padding: 15px 25px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #7c7d7c;
+  margin-bottom: 40px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+/* ///// ====== >>>>> team CSS */
+.team {
+  padding: 100px 0;
+}
+.team__heading {
+  font-size: 45px;
+  font-weight: 500;
+  margin-bottom: 70px;
+}
+.team__card__box {
+}
+.team__card__item {
+  border: 6px double #f1c28b;
+  width: 23%;
+  box-shadow: 0 0 50px #ebedff;
+}
+.team__card__item:not(:last-child) {
+  margin-right: 2.6%;
+}
+.team__card__img {
+  width: 100%;
+}
+.member__details {
+  padding: 25px 30px;
+}
+.member__details > .name {
+  font-weight: 500;
+  font-size: 27px;
+  margin-bottom: 8px;
+}
+.member__details > .designation {
+  font-size: 20px;
+  color: #717071;
+}
+
+/* ///// ====== >>>>>> subscribe CSS */
+.subscribe {
+  background-color: #f5f5f5;
+  padding: 100px 0;
+}
+.subscribe__sub {
+  font-size: 20px;
+  color: #4d4a56;
+  font-weight: normal;
+}
+.subscribe__main {
+  font-size: 50px;
+  font-weight: 500;
+  margin: 60px 0;
+}
+.subscribe__form {
+}
+.subscribe__email {
+  display: block;
+  width: 45%;
+  margin: 0 auto;
+  padding: 20px 20px;
+  font-size: 20px;
+  border: 2px solid #b6c119;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.subscribe__email:focus {
+  border: 2px solid #385a7c;
+  box-shadow: 0 0 25px #bddbff;
+}
+input:focus-visible {
+  outline: none;
+}
+.subscribe__btn {
+  display: block;
+  width: 25%;
+  margin: 25px auto;
+  background-color: #aa972c;
+  padding: 25px;
+  font-size: 25px;
+  color: #fff;
+  border: 1px solid transparent;
+  outline: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.subscribe__btn:hover {
+  background-color: #fff;
+  border: 1px solid #d0c399;
+  color: #bf9759;
+  box-shadow: 0 0 20px #d5dbf2;
+}
+/* ////// ===== >>>>>> service CSS */
+.service {
+  padding: 20px 0;
+}
+.service__heading {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+.service__img {
+  width: 40%;
+}
+.service__content__box {
+  width: 60%;
+  padding: 0 30px;
+}
+.service__content__heading {
+  margin: 20px 0;
+  font-size: 30px;
+  font-weight: bold;
+  color: #565350;
+}
+.service__content__text {
+  font-size: 23px;
+}
+
+/* ////// ====== >>>> CSS */
+.testimonial {
+  background-color: #f5f5f5;
+  padding: 100px 0;
+}
+.testimonial__heading__content {
+}
+.testimonial__sub {
+  color: #6e6e6e;
+  font-weight: normal;
+}
+.testimonial__main {
+  margin: 50px 0;
+  font-size: 50px;
+  font-weight: 500;
+}
+.testimonial__card__box {
+  margin-top: 100px;
+}
+.testimonial__card__item {
+  width: 31%;
+  border: 1px solid #d4d7e0;
+  background-color: #fff;
+  position: relative;
+}
+.testimonial__card__item:not(:last-child) {
+  margin-right: 3.5%;
+}
+.testimonial__card__icon {
+  font-size: 60px;
+  color: #ebebeb;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  z-index: 88;
+}
+.testimonial__card__text {
+  padding: 50px 33px;
+  font-size: 20px;
+  position: relative;
+  z-index: 99;
+  line-height: 35px;
+  box-shadow: 0 0 35px #dce3ff;
+}
+.testimonial__user {
+  padding: 40px 40px;
+  background-color: #f5f5f5;
+  position: relative;
+}
+.testimonial__user::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 47%;
+  border-width: 20px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+  z-index: 999;
+}
+.testimonial__user__img {
+  width: 120px;
+  border: 10px solid #a99526;
+  margin-right: 20px;
+}
+.testi__user__details {
+}
+.testimonial__user__name {
+  padding-top: 20px;
+  font-weight: 500;
+}
+.testimonial__user__designation {
+  font-size: 20px;
+  color: #8da4c3;
+  font-weight: 500;
+}
+
+/* ////// ====== >>>>>> contact CSS */
+.contact {
+  width: 37%;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+.contact__heading__content {
+}
+.contact__heading {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.contact__text {
+  font-size: 19px;
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+.contact__form {
+}
+.contact__form > form > input {
+  display: inline-block;
+  padding: 20px 20px;
+  margin: 20px 0;
+  border: 2px solid #aa972c;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-size: 18px;
+  box-sizing: border-box;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.contact__form > form > textarea {
+  width: 100%;
+  height: 150px;
+  display: inline-block;
+  padding: 20px 20px;
+  margin: 20px 0;
+  border: 2px solid #aa972c;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-size: 18px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+textarea:focus-visible {
+  outline: none;
+}
+.contact__form > form > input:nth-child(1) {
+  width: 100%;
+}
+.contact__form > form > input:nth-child(2) {
+  width: 48%;
+  margin-right: 3%;
+}
+.contact__form > form > input:nth-child(3) {
+  width: 48%;
+}
+.contact__form > form > input:last-child {
+  width: 35% !important;
+  border: 2px solid transparent !important;
+  outline: none;
+  background-color: #aa972c;
+  color: #fff;
+}
+.contact__form > form > input:last-child:hover {
+  background-color: #fff;
+  border: 2px solid #d0c399 !important;
+  color: #bf9759;
+  box-shadow: 0 0 20px #d5dbf2;
+}
+input:focus {
+  border: 2px solid #385a7c !important;
+  box-shadow: 0 0 25px #bddbff;
+}
+textarea:focus {
+  border: 2px solid #385a7c !important;
+  box-shadow: 0 0 25px #bddbff;
+}
+
+/* ////// ====== >>>> footer CSS */
+.footer {
+  font-size: 20px;
+  padding: 20px 0;
+  margin-top: -50px;
+}
